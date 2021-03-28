@@ -8,7 +8,7 @@ data class PopularArticlesResponse(
 	val copyright: String = "",
 
 	@field:SerializedName("results")
-	val results: List<ResultsItem> = listOf(),
+	val results: List<Article> = listOf(),
 
 	@field:SerializedName("num_results")
 	val numResults: Int = 0,
@@ -53,7 +53,7 @@ data class MediaMetadataItem(
 	val height: Int? = null
 )
 
-data class ResultsItem(
+data class Article(
 
 	@field:SerializedName("per_facet")
 	val perFacet: List<String> = listOf(),
